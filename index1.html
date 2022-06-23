@@ -1,0 +1,23 @@
+{% extends 'landing_page/layouts/base.html' %}
+
+{% load static %}
+
+{% block title %} Página Inicial {% endblock title %}
+
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+      {% include 'landing_page/includes/home.html' %}
+
+      {% include 'landing_page/includes/portfolio.html' %}
+
+      {% include 'landing_page/includes/projetos.html' %}
+
+      {% include 'landing_page/includes/contato.html' %}
+
+      {% include 'landing_page/includes/outros.html' %}
+
+{% endblock content %}
+<!-- Specific JS goes HERE --> 
+{% block javascripts %}{% endblock javascripts %}
